@@ -90,20 +90,15 @@ public class BinarySearchTree {
     @Override
     public String toString() {
 
-        // get a current pointer
         Node toPrint = this.root;
 
-        // get a string builder
         StringBuilder stringBuilder = new StringBuilder();
 
-        // loop through all the nodes
         while (toPrint != null) {
 
-            // append the content of the string to the builder
             stringBuilder.append(toPrint.album.numberOfSongs);
             stringBuilder.append("  ");
 
-            // advance the pointer
             if(root.leftChild == null){
                 toPrint = toPrint.rightChild;
             }
