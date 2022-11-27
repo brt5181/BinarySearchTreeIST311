@@ -118,9 +118,6 @@ public class BinarySearchTree {
 
         }
 
-        // append null
-        stringBuilder.append("NULL");
-
         // return the result
         return stringBuilder.toString();
     }

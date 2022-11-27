@@ -105,7 +105,7 @@ class BinarySearchTreeTest {
         bst.insert(a5);
 
 
-        assertEquals("1 -> 2 -> 3 -> NULL", bst.toString());
+        assertEquals("1  2  3  6  7  ", bst.toString());
     }
 
 
