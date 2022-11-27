@@ -88,7 +88,7 @@ public class BinarySearchTree {
     }
 
     @Override
-    public String toString(Node current, Album album) {
+    public String toString() {
 
         // get a current pointer
         Node toPrint = this.root;
@@ -101,18 +101,18 @@ public class BinarySearchTree {
 
             // append the content of the string to the builder
             stringBuilder.append(toPrint.album.numberOfSongs);
-            stringBuilder.append(" -> ");
+            stringBuilder.append("  ");
 
             // advance the pointer
-            if(current.leftChild == null){
+            if(root.leftChild == null){
                 toPrint = toPrint.rightChild;
             }
             else {
-                if (current.rightChild == null){
+                if (root.rightChild == null){
                     toPrint = toPrint.leftChild;
                 }
                 else {
-                    toPrint = toPrint.leftChild
+                    toPrint = toPrint.leftChild;
                 }
             }
 
