@@ -8,4 +8,5 @@ public class Node {
         this.leftChild = null;
         this.rightChild = null;
     }
+
 }

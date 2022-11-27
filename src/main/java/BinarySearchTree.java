@@ -82,4 +82,9 @@ public class BinarySearchTree {
         return current;
 
     }
+    public boolean contains(Album album) throws ClassCastException {
+        if(root == null) return false;
+        return true;
+    }
+
 }
