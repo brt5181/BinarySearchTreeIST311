@@ -87,4 +87,42 @@ public class BinarySearchTree {
         return true;
     }
 
+    @Override
+    public String toString(Node current, Album album) {
+
+        // get a current pointer
+        Node toPrint = this.root;
+
+        // get a string builder
+        StringBuilder stringBuilder = new StringBuilder();
+
+        // loop through all the nodes
+        while (toPrint != null) {
+
+            // append the content of the string to the builder
+            stringBuilder.append(toPrint.album.numberOfSongs);
+            stringBuilder.append(" -> ");
+
+            // advance the pointer
+            if(current.leftChild == null){
+                toPrint = toPrint.rightChild;
+            }
+            else {
+                if (current.rightChild == null){
+                    toPrint = toPrint.leftChild;
+                }
+                else {
+                    toPrint = toPrint.leftChild
+                }
+            }
+
+        }
+
+        // append null
+        stringBuilder.append("NULL");
+
+        // return the result
+        return stringBuilder.toString();
+    }
+
 }
