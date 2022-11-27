@@ -67,6 +67,23 @@ class BinarySearchTreeTest {
 
     @Test
     public void testContains(){
+        BinarySearchTree bst = new BinarySearchTree();
+        ArrayList<String> artistNames = new ArrayList<>();
+        artistNames.add("Artist 1");
+        artistNames.add("Artist 2");
+        Album a1 = new Album(25, artistNames, "album 1", 1);
+        Album a2 = new Album(45, artistNames, "album 2", 2);
+        Album a3 = new Album(15, artistNames, "album 3", 3);
+        Album a4 = new Album(05, artistNames, "album 5", 6);
+        Album a5 = new Album(55, artistNames, "album 5", 7);
+        bst.insert(a1);
+        bst.insert(a2);
+        bst.insert(a3);
+        bst.insert(a4);
+        bst.insert(a5);
+
+
+        assertEquals(true, bst.contains(a5));
 
     }
 
