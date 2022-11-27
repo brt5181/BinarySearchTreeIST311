@@ -61,7 +61,6 @@ class BinarySearchTreeTest {
         bst.delete(a5);
         assertEquals("25: 1 -- [Artist 1, Artist 2] 45: 2 -- [Artist 1, Artist 2] 15: 3 -- [Artist 1, Artist 2] 5: 6 -- [Artist 1, Artist 2] ", bst.OrderTraversal(0));
 
-        //assertEquals("45: 2 -- [Artist 1, Artist 2] ", bst.root.rightChild.album);
 
     }
 
