@@ -106,6 +106,7 @@ class BinarySearchTreeTest {
 
 
         assertEquals("1  2  3  6  7  ", bst.toString());
+        // As listed in BST notes, This is representing the number of songs in each individual album
     }
 
 
