@@ -65,4 +65,9 @@ class BinarySearchTreeTest {
 
     }
 
+    @Test
+    public void testContains(){
+
+    }
+
 }
