@@ -119,6 +119,8 @@ public class BinarySearchTree {
         }
 
         // return the result
+        //
+        // This will return the songs from each album for the toString
         return stringBuilder.toString();
     }
 
