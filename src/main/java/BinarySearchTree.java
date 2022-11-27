@@ -87,6 +87,8 @@ public class BinarySearchTree {
         return true;
     }
 
+
+    //I got a bit confused on how to write this but I was able to get it to print out the tree of songs in order.
     @Override
     public String toString() {
 
